@@ -22,6 +22,10 @@ HVAC_MODE_DRY = "dry"
 # Only the fan is on, not fan and another mode like cool
 HVAC_MODE_FAN_ONLY = "fan_only"
 
+HVAC_MODE_AI = "aIComfort"
+HVAC_MODE_WIND = "wind"
+HVAC_MODE_COMFORT = "comfortCooling"
+
 HVAC_MODES = [
     HVAC_MODE_OFF,
     HVAC_MODE_HEAT,
@@ -30,6 +34,9 @@ HVAC_MODES = [
     HVAC_MODE_AUTO,
     HVAC_MODE_DRY,
     HVAC_MODE_FAN_ONLY,
+    HVAC_MODE_AI,
+    HVAC_MODE_WIND,
+    HVAC_MODE_COMFORT,
 ]
 
 # No preset is active
@@ -82,6 +89,9 @@ CURRENT_HVAC_COOL = "cooling"
 CURRENT_HVAC_DRY = "drying"
 CURRENT_HVAC_IDLE = "idle"
 CURRENT_HVAC_FAN = "fan"
+CURRENT_HVAC_AI = "aIComforting"
+CURRENT_HVAC_WIND = "winding"
+CURRENT_HVAC_COMFORT = "comfortCooling"
 
 
 # A list of possible HVAC actions.
@@ -92,6 +102,9 @@ CURRENT_HVAC_ACTIONS = [
     CURRENT_HVAC_DRY,
     CURRENT_HVAC_IDLE,
     CURRENT_HVAC_FAN,
+    CURRENT_HVAC_AI,
+    CURRENT_HVAC_WIND,
+    CURRENT_HVAC_COMFORT,
 ]
 
 

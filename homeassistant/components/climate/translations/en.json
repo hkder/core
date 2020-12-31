@@ -22,7 +22,10 @@
             "fan_only": "Fan only",
             "heat": "Heat",
             "heat_cool": "Heat/Cool",
-            "off": "Off"
+            "off": "Off",
+            "aIComfort": "AIComfort",
+            "wind": "Wind",
+            "comfortCooling": "ComfortCooling"
         }
     },
     "title": "Climate"

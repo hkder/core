@@ -15,13 +15,16 @@ from homeassistant.components.climate.const import (
     CURRENT_HVAC_FAN,
     CURRENT_HVAC_HEAT,
     CURRENT_HVAC_IDLE,
+    HVAC_MODE_AI,
     HVAC_MODE_AUTO,
+    HVAC_MODE_COMFORT,
     HVAC_MODE_COOL,
     HVAC_MODE_DRY,
     HVAC_MODE_FAN_ONLY,
     HVAC_MODE_HEAT,
     HVAC_MODE_HEAT_COOL,
     HVAC_MODE_OFF,
+    HVAC_MODE_WIND,
     SUPPORT_FAN_MODE,
     SUPPORT_TARGET_TEMPERATURE,
     SUPPORT_TARGET_TEMPERATURE_RANGE,
@@ -58,6 +61,7 @@ OPERATING_STATE_TO_ACTION = {
     "vent economizer": CURRENT_HVAC_FAN,
 }
 
+
 AC_MODE_TO_STATE = {
     "auto": HVAC_MODE_HEAT_COOL,
     "cool": HVAC_MODE_COOL,
@@ -67,6 +71,9 @@ AC_MODE_TO_STATE = {
     "heat": HVAC_MODE_HEAT,
     "heatClean": HVAC_MODE_HEAT,
     "fanOnly": HVAC_MODE_FAN_ONLY,
+    "aIComfort": HVAC_MODE_AI,
+    "wind": HVAC_MODE_WIND,
+    "comfortCooling": HVAC_MODE_COMFORT,
 }
 STATE_TO_AC_MODE = {
     HVAC_MODE_HEAT_COOL: "auto",
@@ -74,6 +81,9 @@ STATE_TO_AC_MODE = {
     HVAC_MODE_DRY: "dry",
     HVAC_MODE_HEAT: "heat",
     HVAC_MODE_FAN_ONLY: "fanOnly",
+    HVAC_MODE_AI: "aIComfort",
+    HVAC_MODE_WIND: "wind",
+    HVAC_MODE_COMFORT: "comfortCooling",
 }
 
 UNIT_MAP = {"C": TEMP_CELSIUS, "F": TEMP_FAHRENHEIT}
